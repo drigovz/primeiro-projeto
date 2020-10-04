@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
-
-/*
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');/*
     font-family: 'Poppins', sans-serif;
 */
 
@@ -229,10 +228,171 @@ header nav ul button {
     background-color: #fff;    
     border-radius: 50px;
     height: 500px;
-    box-shadow: 1px 1px 1px #000;
+    box-shadow: 0px 10px 19px -7px #000;
     z-index: 2;
     position: absolute;
     bottom: -10%;
-    left: 11%;
+    left: 11%; 
+    text-align: center;
 }
 
+    .container-branco h3, .container-valores h3, .baixar-app h3 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        background: -webkit-linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #FD749B;
+        margin-top: 50px;
+        text-align: center;
+    }
+        .container-branco hr, .container-valores hr, .baixar-app hr {
+            margin: 0 auto;
+            padding: 2px;
+            width: 50px;
+            background-color: #FD749B;
+            border:0px;
+            border-radius: 100px;
+            margin-top: 10px;
+        }
+
+        .container-seta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .container-seta i {
+            padding: 20px;
+            font-size: 80px;
+            color: #FD749B;
+            cursor: pointer;
+        }
+.container-valores {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.container-valores h3 {
+    margin-top: 140px;
+}
+
+div.container-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+div.card {
+    width: 240px;
+    height: 240px;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #dedede;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    font-family: 'Roboto', sans-serif;
+}
+    div.card strong {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    div.card span {
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    div.card button {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: none;
+        background: #38A3F1;
+        color: #fff;
+        border-radius: 35px;
+        flex: none;
+        padding: 10px 45px 10px 45px;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 20px 30px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    div.card button:focus {
+        outline: -webkit-focus-ring-color auto 0px;
+    }
+
+    div.card-valores {
+        display: flex;
+        margin-top: 40px;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    div.card-valores h5, sup {
+        font-size: 30px;
+        margin-left: 3px;
+        margin-right: 8px;
+    }
+
+    div.card-valores sup {
+        font-size: 15px;
+    }
+
+    div.ultimo-card {
+        background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
+        color: #fff;
+    }
+
+    div.ultimo-card button {
+        background: #fff;
+        color: #333;
+        font-weight: bold;
+    }
+.baixar-app {
+    text-align: center;
+    }
+    .baixar-app img {
+        z-index: 2;
+        position: relative;
+        top: -30px;
+        bottom: 80px;
+    }
+    .baixar-app-infos hr {
+        margin-bottom: 40px;
+    }
+
+    .baixar-app-infos strong {
+        font-family: Poppins;
+        font-weight: normal;
+    }
+
+    .baixar-app-infos {
+        z-index: 2;
+        position: relative;
+        bottom: -50px;
+        top: 70px;
+    }
+    
+    .botoes-baixar-app {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-baixar-app {
+        z-index: 1;
+        position: relative;
+        top: -50px;
+        width: 100%;
+        margin-top: 50px;
+        height: 600px;
+        background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
+    }
+    

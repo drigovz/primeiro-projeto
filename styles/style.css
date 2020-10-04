@@ -396,3 +396,130 @@ div.card {
         background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
     }
     
+    #footer {
+        margin-top: 10%;        
+        background-color: #151515;
+        padding-top: 25px;
+        padding-bottom:50px;
+        color: #fff;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+        #footer::after,
+        #footer::before {
+            content: '';
+            display: table;
+            clear: both;
+        }
+    
+    .footer-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+        .footer-container h5 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            margin-bottom: 5%;
+        }
+    
+        .footer-container p {
+            color: #A2A2A2;
+            font-size: 15px;
+        }
+    
+        .footer-container::after,
+        .footer-container::before {
+            content: '';
+            display: table;
+            clear: both;
+        }
+    
+    .footer-left {
+        width: 40%;
+        text-align: left;
+        float: left;
+        padding-right: 11%;
+    }
+    
+        .footer-left {
+            color: #A2A2A2;
+        }
+    
+        .footer-left figure {
+            width: 50%;
+            display: block;
+            margin-bottom: 5%;
+        }
+    
+            .footer-left figure img {
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+    
+            .footer-left ul {
+                margin-top: 25%;        
+            }
+    
+        .footer-left ul li {
+            display: inline;
+            margin-left: 3%;
+            margin-right: 3%;        
+        }
+    
+        .footer-left ul li a img {
+            width: 20px;
+        }
+    
+    .footer-center {
+        width: 30%;
+        text-align: left;
+        float: left;
+        padding-right: 11%;
+    }
+    
+        .footer-center ul li  {
+            display: block; 
+            margin-bottom: 2%;       
+        }
+    
+            .footer-center ul li a {
+                color: #A2A2A2;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+            }
+    
+    .footer-right {
+        width: 23%;
+        float: right;
+        text-align: left;
+    }
+    
+        .footer-right a {
+            display: block;
+            padding-top: 10px;
+            color: #A2A2A2;
+        }
+    
+    .footer-copyright {
+        width: 100%;
+        padding-top: 2%;
+        text-align: left;
+    }
+    
+    .footer-copyright {
+        width: 80%;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 400;
+        margin: 0 auto;   
+        font-size: 13px;
+        color: #A2A2A2; 
+    }

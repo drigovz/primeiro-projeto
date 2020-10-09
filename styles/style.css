@@ -18,6 +18,13 @@ a {
 header {
     padding-top: 2%;
     padding-bottom: 2%;
+    z-index: 99;
+    display: flex;
+    z-index: 20; 
+    position: fixed;
+    background: #fff; 
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.07);
 }
 
 header nav {
@@ -25,7 +32,7 @@ header nav {
     display: flex;
     margin: 0 auto;
     width: 90%;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 header nav ul {
@@ -39,7 +46,19 @@ header nav ul a {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #000;
+    cursor: pointer;
 }
+    .cool-link::after { 
+        content: ''; 
+        display: block; 
+        width: 0;
+        height: 2px; 
+        background: #FD749B;
+        transition: width .3s;
+    } 
+    .cool-link:hover::after {
+        width: 100%;
+    }
 
 header nav ul button {
     /*transition: all 0.8s ease 0s;*/
@@ -59,6 +78,9 @@ header nav ul button {
         background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 128.3%);
     }
 
+    header nav ul button a {
+        color: #fff;
+    }
 #banner {
     justify-content: center;
     display: flex;
@@ -233,6 +255,10 @@ header nav ul button {
     left: 11%; 
     text-align: center;
 }
+    .container-branco img {
+        width: 80%;
+        min-width: 80%;   
+    }        
 
     .container-branco h3, .container-valores h3, .baixar-app h3 {
         font-family: Poppins;
@@ -254,6 +280,7 @@ header nav ul button {
             border:0px;
             border-radius: 100px;
             margin-top: 10px;
+            margin-bottom: 35px;
         }
 
         .container-seta {
@@ -394,3 +421,223 @@ div.card {
         background: linear-gradient(39.97deg, #EF2779 0.79%, #7834BE 79.29%);
     }
     
+    #footer {
+        margin-top: 10%;        
+        background-color: #151515;
+        padding-top: 25px;
+        padding-bottom:50px;
+        color: #fff;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+        #footer::after,
+        #footer::before {
+            content: '';
+            display: table;
+            clear: both;
+        }
+    
+    .footer-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+        .footer-container h5 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            margin-bottom: 5%;
+        }
+    
+        .footer-container p {
+            color: #A2A2A2;
+            font-size: 15px;
+        }
+    
+        .footer-container::after,
+        .footer-container::before {
+            content: '';
+            display: table;
+            clear: both;
+        }
+    
+    .footer-left {
+        width: 40%;
+        text-align: left;
+        float: left;
+        padding-right: 11%;
+    }
+    
+        .footer-left {
+            color: #A2A2A2;
+        }
+    
+        .footer-left figure {
+            width: 50%;
+            display: block;
+            margin-bottom: 5%;
+        }
+    
+            .footer-left figure img {
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+    
+            .footer-left ul {
+                margin-top: 25%;        
+            }
+    
+        .footer-left ul li {
+            display: inline;
+            margin-left: 3%;
+            margin-right: 3%;        
+        }
+    
+        .footer-left ul li a img {
+            width: 20px;
+        }
+    
+    .footer-center {
+        width: 30%;
+        text-align: left;
+        float: left;
+        padding-right: 11%;
+    }
+    
+        .footer-center ul li  {
+            display: block; 
+            margin-bottom: 2%;       
+        }
+    
+            .footer-center ul li a {
+                color: #A2A2A2;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+            }
+    
+    .footer-right {
+        width: 23%;
+        float: right;
+        text-align: left;
+    }
+    
+        .footer-right a {
+            display: block;
+            padding-top: 10px;
+            color: #A2A2A2;
+        }
+    
+    .footer-copyright {
+        width: 100%;
+        padding-top: 2%;
+        text-align: left;
+    }
+    
+    .footer-copyright {
+        width: 80%;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 400;
+        margin: 0 auto;   
+        font-size: 13px;
+        color: #A2A2A2; 
+    }
+
+.slideshow-container {
+    width: 60%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;    
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #FD749B;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: bolder;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #FD749B;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    opacity: .6;
+}
+
+.active, .dot:hover {
+    opacity: 1;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}

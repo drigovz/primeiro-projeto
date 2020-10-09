@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Primeiro projeto New Digital Program wBrain" />
@@ -9,26 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" />
+    
     <title>Super Buyer</title>
 </head>
-
 <body>
     <header>
-        <nav>
+        <nav data-menu="suave">
             <figure id="logo">
                 <img src="images/layout/logo.png" alt="Super Buyer" title="Super Buyer" />
             </figure>
 
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Parceiros</a></li>
-                <li><a href="#">Contato</a></li>
-                <button>Download</button>
+                <li><a class="cool-link" href="#inicio">Início</a></li>
+                <li><a class="cool-link" href="#sobre">Sobre</a></li>
+                <li><a class="cool-link" href="#parceiros">Parceiros</a></li>
+                <li><a class="cool-link" href="#footer">Contato</a></li>
+                <button>
+                    <a href="#download">Download</a>
+                </button>
             </ul>
         </nav>
     </header>
-    <section id="banner">
+    <section id="banner" data-anime="scroll" id="inicio">
         <div id="content-banner">
             <article>
                 <h1>
@@ -54,7 +55,7 @@
     </section>
 
 
-    <section class="sobre">
+    <section data-anime="scroll" id="sobre" class="sobre">
         <h2>Sobre nós</h2>
         <hr />
 
@@ -100,25 +101,38 @@
         </div>
     </section>
 
-    <section class="parceiros">
+    <section data-anime="scroll" id="parceiros" class="parceiros">
         <div class="parceiros-background">
-
         </div>
-
         <div class="container-branco">
             <h3>Nossos parceiros</h3>
             <hr />
-
-            <div class="container-seta">
-                <i class="fas fa-angle-left"></i>
-                <figure>
-                    <img src="images/layout/cards.png" />
-                </figure>
-                <i class="fas fa-angle-right"></i>
+            
+            <div class="mySlides fade">
+                <img src="images/layout/cards.png" />
             </div>
+    
+            <div class="mySlides fade">
+                <img src="images/layout/cards2.png" />
+            </div>
+    
+            <div class="mySlides fade">
+                <img src="images/layout/cards3.png" />
+            </div>
+    
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    
+        <br>
+    
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </section>
-    <section class="valores">
+    <section data-anime="scroll" id="valores" class="valores">
         <div class="container-valores">
             <h3>Valores</h3>
             <hr />
@@ -126,7 +140,7 @@
             <div class="container-cards">
                 <div class="card">
                     <strong>Grátis</strong>
-                    <span>Tenha toda a experiência do app sem custo!</span>                    
+                    <span>Tenha toda a experiência do app sem custo!</span>
                     <div class="card-valores">
                         <sup>R$</sup>
                         <h5>0</h5>
@@ -136,7 +150,7 @@
                 </div>
                 <div class="card">
                     <strong>Padrão</strong>
-                    <span>Descontos e ofertas exclusivas para você!</span>                    
+                    <span>Descontos e ofertas exclusivas para você!</span>
                     <div class="card-valores">
                         <sup>R$</sup>
                         <h5>0</h5>
@@ -146,7 +160,7 @@
                 </div>
                 <div class="card ultimo-card">
                     <strong>Premium</strong>
-                    <span>Toda a experiencia do app sem taxas</span>                    
+                    <span>Toda a experiencia do app sem taxas</span>
                     <div class="card-valores">
                         <sup>R$</sup>
                         <h5>0</h5>
@@ -157,7 +171,7 @@
             </div>
         </div>
     </section>
-    <section class="baixar-app">
+    <section data-anime="scroll" id="download" class="baixar-app">
         <div class="baixar-app-infos">
             <h3>Baixe nosso app</h3>
             <hr />
@@ -172,28 +186,92 @@
             </div>
         </div>
         <div class="banner-baixar-app">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L60,170.7C120,181,240,203,360,213.3C480,224,600,224,720,197.3C840,171,960,117,1080,101.3C1200,85,1320,107,1380,117.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-            <img src="./images/layout/smartphone.png" alt="Smartphone com o App SuperBuyer">       
-        </div> 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#fff" fill-opacity="1"
+                    d="M0,160L60,170.7C120,181,240,203,360,213.3C480,224,600,224,720,197.3C840,171,960,117,1080,101.3C1200,85,1320,107,1380,117.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+            <img src="./images/layout/smartphone.png" alt="Smartphone com o App SuperBuyer">
+        </div>
     </section>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <footer id="footer">
+        <div class="footer-container">
+            <aside class="footer-left">
+                <figure>
+                    <img src="images/layout/logo-branco.png" />
+                </figure>
 
+                <p>
+                    Mais tempo e segurança para você. Sem uso de dinheiro ou cartões
+                </p>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/logos/twitter.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/logos/facebook.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/logos/linkedin.png" />
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <div data-menu="suave" class="footer-center">
+                <h5>Super Buyer Links</h5>
+
+                <ul>
+                    <li>
+                        <a href="#inicio">Início</a>
+                    </li>
+                    <li>
+                        <a href="#sobre">
+                            Sobre nós
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#parceiros">
+                            Parceiros
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contato">
+                            Contato
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#download">
+                            Download
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <aside class="footer-right">
+                <h5>Fale conosco</h5>
+                <p>
+                    superbuyer@email.com
+                </p>
+                <p>
+                    
+                </p>
+                <a href="#download">
+                    Baixe nosso aplicativo
+                </p>
+            </aside>
+        </div>
+        <div class="footer-copyright">
+            © 2020 Designed by New Digital Program
+        </div>
+    </footer>
+    <script type="text/javascript" src="scripts/script.js"></script>
 </body>
-
 </html>

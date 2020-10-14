@@ -430,6 +430,10 @@ div.card {
         font-style: normal;
         font-weight: 400;
     }
+
+        #footer a:hover{
+            text-decoration: underline overline;
+        }
     
         #footer::after,
         #footer::before {
